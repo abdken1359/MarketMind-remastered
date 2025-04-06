@@ -38,6 +38,14 @@
 
  "seeItemDetails":"See more details",
  "seeLessItemDetails":"See less de détails",
- "deleteItem":"Delete Item"
+ "deleteItem":"Delete Item",
+ "deleteAllItems":"Empty Cart",
+ "searchItem":"Search Item",
+
+
+ "areYouSure": "Are you sure you want to empty your cart?",
+"irreversibleAction": "This action cannot be undone.",
+"deleteAll": "Delete All",
+"cancelAction": "Cancel"
    
 }

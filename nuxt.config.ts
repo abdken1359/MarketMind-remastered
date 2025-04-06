@@ -18,7 +18,8 @@ export default defineNuxtConfig({
     locales: [
       { code: 'en', name: 'EN', language:'en-US', file: 'en.json' },
       { code: 'fr', name: 'FR', language:'fr-FR', file: 'fr.json' }
-    ]
+    ],
+    baseUrl:'https://marketmindapp.netlify.app'
 
   }
 })

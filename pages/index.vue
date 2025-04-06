@@ -4,6 +4,7 @@
         <content-empty-list v-if="items.storeItems.length<1"/>
         <ContentCart v-else/>
         <content-modals-add-to-cart-modal/>
+        <ContentModalsConfirmDeletion/>
     </v-main>
 </template>
 <script setup lang="ts">

@@ -39,7 +39,14 @@
 
     "seeItemDetails":"Voir plus de détails",
     "seeLessItemDetails":"Voir moins de détails",
-    "deleteItem":"Effacer Article"
+    "deleteItem":"Effacer Article",
+    "deleteAllItems":"Vider la liste",
+    "searchItem":"Rechercher",
+
+    "areYouSure":"Êtes-vous sûr de vouloir vider votre panier ?",
+    "irreversibleAction":"Cette action ne peut pas être annulée.",
+    "deleteAll":"Effacer Tout",
+    "cancelAction":"Annuler"
 
 
 }

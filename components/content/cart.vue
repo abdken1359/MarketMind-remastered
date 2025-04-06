@@ -1,20 +1,35 @@
 <style scoped>
-.list-enter-from,.list-leave-to{
+.list-enter-from{
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(30px);
+}
+.list-leave-to{
+    opacity: 0;
+    transform: translateY(-30px);
 }
 .list-enter-to,.list-leave-from{
     opacity: 1;
     transform: translateY(0);
 }
-.list-enter-active,.list-leave-active{
-    transition: opacity 0.5s ease;
+.list-enter-active{
+    transition: all 0.5s ease;
+}
+.list-leave-active{
+    transition: all 0.2s ease-in-out;
+}
+.card{
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 1px lightgrey;
+}
+.card:hover{
+    box-shadow: 0 0 5px lightgrey;
 }
 </style>
 <template>
     <v-container>
         <h2 class="my-4 text-center">Items</h2>
          <p>{{ cartItems }}</p>
+         <ContentCartMenu/>
 
          <v-row align="center" justify="center" class="my-6">
 
@@ -23,8 +38,8 @@
                <v-col cols="12 "
                v-for="(c,index) in cartItems" :key="index"
                md="6" lg="4">
-                <v-card>
-                    <NuxtImg :src="`/Images/ItemsCategories/${c.category}.jpg`" :alt="c.category"/>
+                <v-card >
+                    <NuxtImg :src="`/Images/ItemsCategories/mignified/${c.category}.jpg`" :alt="c.category" height="300"/>
                     <v-card-item>
                         <v-card-title>
                             <div class="d-flex align-center ga-4">
@@ -110,7 +125,7 @@ const items=useItemsStore()
 // :image="`/Images/itemsCategories/${c.category}.jpg`"
 //Computed
 const cartItems=computed(()=>{
-    return items.storeItems;
+    return items.foundItem;
 
 })
 
