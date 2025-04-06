@@ -11,8 +11,10 @@
 "addToCartItemQuantity":"Quantity",
 "addToCartItemCategory":"Category",
 "addToCartItemPricePerQuantity":"Price per Quantity",
+"addToCartItemCurrency":"Currency",
 
 "noCategory":"None",
+"otherCategory":"Other",
 "beautyCategory":"Beauty & Personal Care",
 "booksCategory":"Books & Stationery",
 "clothingsCategory":"Clothing",
@@ -27,6 +29,15 @@
 "itemCollectionNone":"None",
 "itemCollectionPackages":"Packages",
 "itemCollectionCups":"Cups",
-"itemCollectionBags":"Bags"
+"itemCollectionBags":"Bags",
+"itemCollectionPallets":"Palettes",
+
+ "addToCart":"Add Item",
+ "addItemSuccessMessage":"Item added successfully!",
+ "addItemErrorMessage":"An error occured",
+
+ "seeItemDetails":"See more details",
+ "seeLessItemDetails":"See less de détails",
+ "deleteItem":"Delete Item"
    
 }

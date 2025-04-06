@@ -27,7 +27,7 @@
     <v-app-bar flat class="border-b-thin " :class="theme.isDark?'nav-background':''" height="100">
         <v-app-bar-title>
             <NuxtLink :to="`/${realLang}`" class="logo">
-                <NuxtImg src="/app_logo.svg"  width="50"/>
+                <NuxtImg src="/app_logo.svg"  width="50" height="50" alt="Logo"/>
                 <span class="font-bold d-none d-md-block">MarketMind</span>
             </NuxtLink>
         </v-app-bar-title>

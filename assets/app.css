@@ -5,3 +5,8 @@ body{
     min-height: 100vh;
     font-family: 'Poppins','Verdana'!important;
 }
+img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
