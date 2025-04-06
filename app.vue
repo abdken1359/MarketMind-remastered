@@ -1,11 +1,17 @@
 <template>
   <div>
     <NuxtRouteAnnouncer />
+    <v-app :theme="theme.isDark?'dark':'light'">
     <NuxtLayout/>
+  </v-app>
   </div>
 </template>
 <script setup lang="ts">
+const head = useLocaleHead()
 useHead({
+   htmlAttrs:{
+    lang:head.value.htmlAttrs.lang
+   },
  meta:[
   {
     name:'apple-mobile-web-app-title', content:'MarketMind'
@@ -31,4 +37,6 @@ useHead({
   }
  ]
 })
+
+const theme=useThemeStore()
 </script>

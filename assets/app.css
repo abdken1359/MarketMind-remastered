@@ -3,5 +3,5 @@ html{
 }
 body{
     min-height: 100vh;
-    font-family: 'Poppins';
+    font-family: 'Poppins','Verdana'!important;
 }
