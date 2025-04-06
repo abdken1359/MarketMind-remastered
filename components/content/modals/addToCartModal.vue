@@ -128,10 +128,14 @@
         </template>
       </v-card>
 </v-dialog>
-<v-snackbar v-model="showSuccessMessage" color="green-accent-2" :timeout="2000" location="left">
+<v-snackbar v-model="showSuccessMessage" color="green-accent-2" :timeout="2000" location="left"
+transition="scroll-y-reverse-transition"
+>
     {{ $t('addItemSuccessMessage') }}
 </v-snackbar>
-<v-snackbar v-model="showErrorMessage" color="red-accent-2" :timeout="2000" location="left">
+<v-snackbar v-model="showErrorMessage" color="red-accent-2" :timeout="2000" location="left"
+transition="scroll-y-reverse-transition"
+>
     {{ $t('addItemErrorMessage') }}
 </v-snackbar>
 </div>
@@ -207,6 +211,10 @@ const handleThis=()=>{
        isLoading.value=false
        showSuccessMessage.value=true
 
+       addToCartForm.itemName=''
+       addToCartForm.itemQuantity=''
+       addToCartForm.itemPricePerQuantity=''
+
         }
         catch(e){
     isLoading.value=false
@@ -216,7 +224,7 @@ const handleThis=()=>{
     utils.closeAddToCartModal();
    }
 
-    },2000)
+    },1000)
 
 
    

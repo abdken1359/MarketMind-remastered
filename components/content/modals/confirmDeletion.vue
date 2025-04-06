@@ -4,13 +4,16 @@
         <v-card max-width="500" class="mx-auto" :title="$t('areYouSure')" :text="$t('irreversibleAction')">
            <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn :text="$t('deleteAll')"></v-btn>
-            <v-btn :text="$t('cancelAction')" @click="utils.closeDeleteAllItemsModal()" :color="decideCancelColor"></v-btn>
+            <v-btn :text="$t('deleteAll')" @click="deleteAll()"></v-btn>
+            <v-btn :text="$t('cancelAction')" @click="utils.closeDeleteAllItemsModal()" 
+            :color="decideCancelColor" ></v-btn>
            </v-card-actions>
         </v-card>
     </v-dialog>
-    <v-snackbar v-model="showSuccessMessage" color="green-accent-2" :timeout="2000" location="left">
-    {{ $t('addItemSuccessMessage') }}
+    <v-snackbar v-model="showSuccessMessage" color="green-accent-2" :timeout="2000" location="left"
+    transition="scroll-y-reverse-transition"
+    >
+    {{ $t('deletedAllItems') }}
 </v-snackbar>
 </div>
 </template>
@@ -28,6 +31,7 @@ const decideCancelColor=computed(()=>{
 })
 const deleteAll=()=>{
         items.deleteAllItems()
-        showSuccessMessage.value=true   
+        showSuccessMessage.value=true  
+        utils.closeDeleteAllItemsModal() 
 }
 </script>

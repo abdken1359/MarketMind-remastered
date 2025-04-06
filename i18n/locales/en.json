@@ -6,11 +6,13 @@
     "noItemsText":"You didn't add an Item yet.",
     "noItemsAction":"Add Item",
     
+    "items":"Items",
+    
    "addToCartTitle":"Add Item",
-"addToCartItemName":"Item Name",
-"addToCartItemQuantity":"Quantity",
-"addToCartItemCategory":"Category",
-"addToCartItemPricePerQuantity":"Price per Quantity",
+  "addToCartItemName":"Item Name",
+  "addToCartItemQuantity":"Quantity",
+  "addToCartItemCategory":"Category",
+  "addToCartItemPricePerQuantity":"Price per Quantity",
 "addToCartItemCurrency":"Currency",
 
 "noCategory":"None",
@@ -46,6 +48,8 @@
  "areYouSure": "Are you sure you want to empty your cart?",
 "irreversibleAction": "This action cannot be undone.",
 "deleteAll": "Delete All",
-"cancelAction": "Cancel"
+"cancelAction": "Cancel",
+"deletedAllItems":"All items deleted successfully!",
+"itemNotFound":"not found"
    
 }

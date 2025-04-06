@@ -7,6 +7,8 @@
     "noItemsText": "Vous n'avez pas encore ajouté d'article.",
     "noItemsAction": "Ajouter article",
 
+    "items":"Articles",
+
     "addToCartTitle":"Ajouter Article",
     "addToCartItemName":"Nom d'article",
     "addToCartItemQuantity":"Quantité",
@@ -46,7 +48,10 @@
     "areYouSure":"Êtes-vous sûr de vouloir vider votre panier ?",
     "irreversibleAction":"Cette action ne peut pas être annulée.",
     "deleteAll":"Effacer Tout",
-    "cancelAction":"Annuler"
+    "cancelAction":"Annuler",
 
+    "deletedAllItems":"Tous les articles ont été supprimés avec succès!",
+    "itemNotFound":"non trouvé"
+    
 
 }

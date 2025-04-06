@@ -14,7 +14,7 @@
 }
 </style>
 <template>
-    <div class="flex align-center justify-center my-6 flex-col ga-10">
+    <div class="flex align-center justify-center  flex-col">
         <v-text-field :label="$t('searchItem')" color="blue"
          variant="outlined" class="w-100 mx-auto w-md-50" prepend-inner-icon="mdi-magnify"
         rounded="xl" density="comfortable" v-model="items.searchItem"
@@ -33,7 +33,7 @@
             variant="flat" :aria-label="$t('deleteAllItems') " @click="utils.openDeleteAllItemsModal()"></v-btn>
         </div>
         
-        <p>{{ items.searchItem }}</p>
+        
 
     </div>
 </template>

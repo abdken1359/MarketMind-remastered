@@ -26,12 +26,12 @@
 }
 </style>
 <template>
-    <v-container>
-        <h2 class="my-4 text-center">Items</h2>
-         <p>{{ cartItems }}</p>
+    <v-container class="mt-10">
+        <h2 class="my-4 text-center">{{ $t("items") }}</h2>
+         
          <ContentCartMenu/>
 
-         <v-row align="center" justify="center" class="my-6">
+         <v-row align="center" justify="center" class="my-6" >
 
            
                 <TransitionGroup name="list">
@@ -50,7 +50,7 @@
                         </v-card-title>
                         <v-card-subtitle class="text-capitalize">
                             {{ c.quantity }}
-                            {{ c.collection==='Other' || c.collection==="Autres"?'':c.collection }}</v-card-subtitle>
+                            {{ c.collection==='Aucun' || c.collection==="None"?'':c.collection }}</v-card-subtitle>
                     </v-card-item>
 
                     <v-card-actions>
@@ -115,7 +115,7 @@
                 </TransitionGroup>
         
          </v-row>
-         <v-btn color="blue" @click="utils.showAddToCartModal">Add item</v-btn>
+        <ContentItemNotFound v-show="items.foundItem.length<1"/>
     </v-container>
 </template>
 <script setup lang="ts">
