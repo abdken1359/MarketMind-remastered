@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-btn @click.stop="switchLanguages()" variant="flat">{{ realLang==='fr'?'FR':'EN' }}</v-btn>
+        <v-btn @click.stop="switchLanguages()" variant="text">{{ realLang==='fr'?'FR':'EN' }}</v-btn>
     </div>
 </template>
 <script setup lang="ts">

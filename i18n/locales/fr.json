@@ -1,5 +1,6 @@
 {
-    
+   "light":"Passer en mode clair",
+   "dark":"Passer en mode sombre" ,
    
     "heroMessage": "Créez et gérez votre liste de courses avec cette application simple et efficace de panier de marché.",
     "noItemsHeading": "La liste est vide",
