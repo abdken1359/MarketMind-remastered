@@ -1,6 +1,8 @@
 <template>
     <v-sheet elevation="0" :color="themeColor" class="pa-10">
-        <h1>{{ $t('heroMessage') }}</h1>
+        <h2 class="d-none d-lg-block font-weight-light">{{ $t('heroMessage') }}</h2>
+        <h3 class="d-block d-lg-none font-weight-light">{{ $t('heroMessage') }}</h3>
+        
 
     </v-sheet>
 </template>

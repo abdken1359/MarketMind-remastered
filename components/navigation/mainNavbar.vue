@@ -33,8 +33,8 @@
         </v-app-bar-title>
 
         <template #append>
-           <NavigationContentLanguageMenu/>
-           <NavigationContentThemeSwitcher/>
+           <ContentLanguageMenu/>
+           <ContentThemeSwitcher/>
         </template>
 
     </v-app-bar>

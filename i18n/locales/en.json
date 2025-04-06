@@ -2,7 +2,31 @@
     "light": "Switch to light mode",
      "dark": "Switch to dark mode",
     "heroMessage":"Create and manage your shopping list with this simple and efficient market bucket list app.",
-    "noItemsHeading":"List is Empty",
+    "noItemsTitle":"List is Empty",
     "noItemsText":"You didn't add an Item yet.",
-    "noItemsAction":"Add Item"
+    "noItemsAction":"Add Item",
+    
+   "addToCartTitle":"Add Item",
+"addToCartItemName":"Item Name",
+"addToCartItemQuantity":"Quantity",
+"addToCartItemCategory":"Category",
+"addToCartItemPricePerQuantity":"Price per Quantity",
+
+"noCategory":"None",
+"beautyCategory":"Beauty & Personal Care",
+"booksCategory":"Books & Stationery",
+"clothingsCategory":"Clothing",
+"electronicsCategory":"Electronics",
+"furnitureCategory":"Furniture",
+"groceriesCategory":"Groceries",
+"healthCareCategory":"Healthcare",
+"petsCategory":"Pet Products",
+"sportsCategory":"Sports & Fitness",
+"toysCategory":"Toys & Games",
+
+"itemCollectionNone":"None",
+"itemCollectionPackages":"Packages",
+"itemCollectionCups":"Cups",
+"itemCollectionBags":"Bags"
+   
 }

@@ -3,7 +3,32 @@
    "dark":"Passer en mode sombre" ,
    
     "heroMessage": "Créez et gérez votre liste de courses avec cette application simple et efficace de panier de marché.",
-    "noItemsHeading": "La liste est vide",
+    "noItemsTitle": "La liste est vide",
     "noItemsText": "Vous n'avez pas encore ajouté d'article.",
-    "noItemsAction": "Ajouter article"
+    "noItemsAction": "Ajouter article",
+
+    "addToCartTitle":"Ajouter Article",
+    "addToCartItemName":"Nom d'article",
+    "addToCartItemQuantity":"Quantité",
+    "addToCartItemCategory":"Catégorie",
+    "addToCartItemPricePerQuantity":"Prix par Quantité",
+    
+    "noCategory":"Aucun",
+    "beautyCategory":"Beauté et soins personnels",
+    "booksCategory":"Livres et Papeterie",
+    "clothingsCategory":"Vêtements",
+    "electronicsCategory":"Électronique",
+    "furnitureCategory":"Meubles",
+    "groceriesCategory":"Épiceries",
+    "healthCareCategory":"Soins de santé",
+    "petsCategory":"Produits pour animaux de compagnie",
+    "sportsCategory":"Sport et fitness",
+    "toysCategory":"Jouets et jeux",
+
+    "itemCollectionNone":"Aucun",
+    "itemCollectionPackages":"Paquets",
+    "itemCollectionCups":"Boîtes",
+    "itemCollectionBags":"Sacs"
+
+
 }
