@@ -30,8 +30,10 @@
         <h2 class="my-4 text-center">{{ $t("items") }}</h2>
          
          <ContentCartMenu/>
+         <ContentItemsLoading v-if="utils.showSkeletonLoaders"/>
+         
 
-         <v-row align="center" justify="center" class="my-6" >
+         <v-row align="center" justify="center" class="my-6" v-else>
 
            
                 <TransitionGroup name="list">
@@ -139,5 +141,14 @@ const decideHeadingColor=computed(()=>{
 })
 const decideImageSize=computed(()=>{
    return  display.smAndDown.value?'200':'300'
+})
+ const loadItems= async ()=>{
+    setTimeout(()=>{
+       utils.showSkeletonLoaders=false
+
+    },500)
+ }
+onMounted(()=>{
+          loadItems()
 })
 </script>

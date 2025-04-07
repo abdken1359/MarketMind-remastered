@@ -1,6 +1,7 @@
 export const useUtilitiesStore=defineStore('Utilities',()=>{
     const isAddToCartModalOpen=ref(false)
     const isDeleteAllItemModalOpen=ref(false)
+    const showSkeletonLoaders=ref(true)
 
     const showAddToCartModal=():void=>{
         isAddToCartModalOpen.value=true
@@ -23,6 +24,7 @@ export const useUtilitiesStore=defineStore('Utilities',()=>{
     return{
         isAddToCartModalOpen,
         isDeleteAllItemModalOpen,
+        showSkeletonLoaders,
         showAddToCartModal,
         closeAddToCartModal,
         openDeleteAllItemsModal,
