@@ -37,7 +37,7 @@
 
         <template #append>
            <ContentLanguageMenu/>
-           <v-btn icon="mdi-github" href="https://marketmindapp.netlify.app" target="_blank"
+           <v-btn icon="mdi-github" href="https://github.com/abdken1359/MarketMind-remastered" target="_blank"
             :aria-label="$t('github')">
 
            </v-btn>
