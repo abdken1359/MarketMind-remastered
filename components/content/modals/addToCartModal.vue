@@ -115,7 +115,7 @@
             {{ $t('addToCart') }}</v-btn>
         
       </v-form>
-      <p class="my-4">{{ addToCartForm }}</p>
+      
     </v-card-text>
 
         <template v-slot:actions>
