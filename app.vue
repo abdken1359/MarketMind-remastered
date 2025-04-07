@@ -37,6 +37,14 @@ useHead({
   }
  ]
 })
+const {t}=useI18n()
+useSeoMeta({
+  ogTitle:'MarketMind - Shopping Cart App',
+  ogDescription:t('heroMessage'),
+  ogImage:'/Icons/apple-touch-icon.png',
+  ogType:'website',
+  ogUrl:'https://marketmindapp.netlify.app'
+})
 
 const theme=useThemeStore()
 </script>

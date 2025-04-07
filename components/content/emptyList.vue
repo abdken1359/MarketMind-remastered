@@ -1,6 +1,16 @@
+<style scoped>
+.myImg{
+    width: 150px!important;
+    height: 150px!important;
+   
+}
+</style>
 <template>
     <v-empty-state :title="t('noItemsTitle')" 
-    :text="t('noItemsText')" :image="`/Images/${decideImage}`" class="mt-16" >
+    :text="t('noItemsText')"  class="mt-16" >
+    <template #media>
+        <v-img :src="`/Images/${decideImage}`"  class="mx-auto myImg" :alt="t('noItemsTitle')"></v-img>
+    </template>
     <template #actions>
         <v-btn :color="decideColor" prepend-icon="mdi-plus" @click="utils.showAddToCartModal">{{ t('noItemsAction') }}</v-btn>
     </template>

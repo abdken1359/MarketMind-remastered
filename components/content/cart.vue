@@ -42,9 +42,9 @@
                     <NuxtImg :src="`/Images/ItemsCategories/mignified/${c.category}.jpg`" :alt="c.category" height="300"/>
                     <v-card-item>
                         <v-card-title>
-                            <div class="d-flex align-center ga-4">
+                            <div class="d-flex flex-column align-center ga-2">
                                 <span>{{ c.name }}</span>
-                                <v-spacer></v-spacer>
+                                
                                 <span :class="decidePriceColor">{{ c.totalPrice }} {{ c.currency }}</span> 
                             </div>
                         </v-card-title>

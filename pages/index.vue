@@ -13,12 +13,13 @@ import { ContentCart } from '#components';
 const head= useLocaleHead()
 const items=useItemsStore();
 const utils=useUtilitiesStore();
+const {t}=useI18n()
 useHead({
     title:'MarketMind - Shopping Cart App',
     meta:[
         {
             name:'description',
-            content:'Create and manage your shopping list with this simple and efficient market bucket list app.',
+            content:t('heroMessage'),
 
         }
     ]

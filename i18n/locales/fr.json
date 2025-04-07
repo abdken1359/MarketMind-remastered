@@ -1,6 +1,7 @@
 {
    "light":"Passer en mode clair",
    "dark":"Passer en mode sombre" ,
+   "github":"Regarder le projet sur Github",
    
     "heroMessage": "Créez et gérez votre liste de courses avec cette application simple et efficace de panier de marché.",
     "noItemsTitle": "Le Panier est vide",

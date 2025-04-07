@@ -21,20 +21,28 @@
     background-color: transparent !important;
    
 }
-
+.logoImg{
+    width: 50px;
+    height: 50px;
+}
 </style>
 <template>
     <v-app-bar flat class="border-b-thin " :class="theme.isDark?'nav-background':''" height="100">
         <v-app-bar-title>
             <NuxtLink :to="`/${realLang}`" class="logo">
-                <NuxtImg src="/app_logo.svg"  width="50" height="50" alt="Logo"/>
+                <NuxtImg src="/app_logo.svg" class="logoImg" alt="Logo"/>
                 <span class="font-bold d-none d-md-block">MarketMind</span>
             </NuxtLink>
         </v-app-bar-title>
 
         <template #append>
            <ContentLanguageMenu/>
+           <v-btn icon="mdi-github" href="https://marketmindapp.netlify.app" target="_blank"
+            :aria-label="$t('github')">
+
+           </v-btn>
            <ContentThemeSwitcher/>
+          
         </template>
 
     </v-app-bar>

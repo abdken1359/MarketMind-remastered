@@ -1,6 +1,7 @@
 {
     "light": "Switch to light mode",
      "dark": "Switch to dark mode",
+     "github":"See app on Github",
     "heroMessage":"Create and manage your shopping list with this simple and efficient market bucket list app.",
     "noItemsTitle":"List is Empty",
     "noItemsText":"You didn't add an Item yet.",
