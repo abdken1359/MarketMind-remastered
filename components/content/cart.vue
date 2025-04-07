@@ -140,7 +140,7 @@ const decideHeadingColor=computed(()=>{
     return theme.isDark?'':''
 })
 const decideImageSize=computed(()=>{
-   return  display.smAndDown.value?'200':'300'
+   return  display.smAndDown.value?'200':'200'
 })
  const loadItems= async ()=>{
     setTimeout(()=>{
