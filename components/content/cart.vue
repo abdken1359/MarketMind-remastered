@@ -39,7 +39,8 @@
                v-for="(c,index) in cartItems" :key="index"
                md="6" lg="4">
                 <v-card >
-                    <NuxtImg :src="`/Images/ItemsCategories/mignified/${c.category}.jpg`" :alt="c.category" height="300"/>
+                    <NuxtImg :src="`/Images/ItemsCategories/mignified/${c.category}.jpg`" :alt="c.category" 
+                    :height="decideImageSize"/>
                     <v-card-item>
                         <v-card-title>
                             <div class="d-flex flex-column align-center ga-2">
@@ -122,6 +123,7 @@
 const utils=useUtilitiesStore()
 const theme=useThemeStore()
 const items=useItemsStore()
+const display =useDisplay()
 // :image="`/Images/itemsCategories/${c.category}.jpg`"
 //Computed
 const cartItems=computed(()=>{
@@ -134,5 +136,8 @@ const decidePriceColor= computed(()=>{
 })
 const decideHeadingColor=computed(()=>{
     return theme.isDark?'':''
+})
+const decideImageSize=computed(()=>{
+   return  display.smAndDown.value?'200':'300'
 })
 </script>

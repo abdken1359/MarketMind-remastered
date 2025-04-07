@@ -46,8 +46,8 @@
  "searchItem":"Search Item",
 
 
- "areYouSure": "Are you sure you want to empty your cart?",
-"irreversibleAction": "This action cannot be undone.",
+ "areYouSure": "Confirmation",
+"irreversibleAction": "Are you sure you want to empty your cart?",
 "deleteAll": "Delete All",
 "cancelAction": "Cancel",
 "deletedAllItems":"All items deleted successfully!",

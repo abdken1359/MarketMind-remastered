@@ -46,8 +46,8 @@
     "deleteAllItems":"Vider la liste",
     "searchItem":"Rechercher",
 
-    "areYouSure":"Êtes-vous sûr de vouloir vider votre panier ?",
-    "irreversibleAction":"Cette action ne peut pas être annulée.",
+    "areYouSure":"Confirmation",
+    "irreversibleAction":"Êtes-vous sûr de vouloir vider votre panier ?",
     "deleteAll":"Effacer Tout",
     "cancelAction":"Annuler",
 
