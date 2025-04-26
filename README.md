@@ -1,5 +1,5 @@
 # About MarketMindRemastered
-MarketMind remastered is the Nuxt 3 remastered version of the original marketMind.netlify.app. This version adds persistence across browsers with Nitro js, instead of the traditional browser local storage.  
+MarketMind remastered is the Nuxt 3 remastered version of the original marketMind.netlify.app. This app stores user bucket list in the browser local storage, meaning changing the browser will also delete the list.  
 New features will be added later. 
 
 ## Nuxt Modules Used
@@ -7,4 +7,4 @@ New features will be added later.
 - Pinia - Nuxt
 - Nuxt - Fonts
 - Vuetify - Nuxt
-- 
+  
